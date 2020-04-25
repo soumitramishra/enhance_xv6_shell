@@ -7,14 +7,14 @@ If “sh” is run with a single command line argument, it should open that file
 When reading from a script, the shell should not print “$” prompts. <br>
 If the script file can’t be opened, the shell should exit with a non-zero status.<br>
 
-<b>Feature 2: && and || operators.<b><br>
+<b>Feature 2: && and || operators.</b><br>
 
 These operators operate much like the “;” sequence operator, except the execution of the subcommand on the left is dependent on the exit status of the subcommand on the right.<br>
 A command “foo && bar” will execute bar only if foo succeeds (exits with status 0).<br>
 A command “foo || bar” will execute bar only if foo fails (exits with a non-zero status).<br>
 These operators should be added in a manner consistent with the design of existing operators in the xv6 shell<br>
 
-<b>Feature 2: Alias <b><br>
+<b>Feature 2: Alias </b><br>
 I added "alias" feature. This is a shortcut for existing commands.
 It would help the users to create shorthands for long commands which are to be used frequently.
 The user can add new alias, run command using the aliases as well as update existing alias similar to linux bash shell alias command.
